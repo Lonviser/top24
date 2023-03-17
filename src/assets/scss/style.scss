@@ -6,6 +6,8 @@
 
 @import "blocks/header";
 @import "blocks/buttons";
+@import "blocks/slider";
+@import "blocks/sidebar";
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -16,4 +18,13 @@
     padding-left: 30px;
     padding-right: 30px;
     margin: 0 auto;
+}
+.main-content{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 330px 1fr;
+    column-gap: 15px;
+}
+body{
+    background-color: $second-color;
 }
