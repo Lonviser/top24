@@ -1,0 +1,19 @@
+
+
+@import "generic/normilize";
+@import "generic/variables";
+@import "generic/swiper";
+
+@import "blocks/header";
+@import "blocks/buttons";
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1440px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+}
