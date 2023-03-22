@@ -13,8 +13,11 @@
 @import "blocks/sales";
 @import "blocks/taxi";
 @import "blocks/work";
+@import "blocks/action";
+
 *{
     font-family: 'Montserrat', sans-serif;
+    box-sizing:border-box;
 }
 
 .container{
