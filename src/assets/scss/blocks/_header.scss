@@ -52,6 +52,15 @@
     }
 }
 
+@media(max-width:1200px){
+    .header{
+        &__heading{
+            font-size: 2vw;
+        }
+
+    }
+    
+}
 @media (max-width:640px){
     .header__call-link{
         display: none;

@@ -1,0 +1,120 @@
+.footer{
+    min-height: 330px;
+    background: #FFFFFF;
+    width: 100%;
+    margin-top: 40px;
+    &__content{
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 42px;
+    }
+    &__under{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 14px;
+        border-top: 1px solid #D6D6D6;
+
+    }
+    &__logo{
+        text-align: center;
+        h2{
+            margin: 0;
+            margin-top: 20px;
+        }
+    }
+    &__copyright{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150% ;
+        color: $font-color;
+    }
+    &__developer{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 114%;
+        color: $font-color;
+    }
+    &__title{
+        display: table;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 89%;
+        font: $main-color;
+        padding-bottom: 10px;
+        border-bottom:2px solid $font-color;
+    }
+
+    p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    a{
+        text-decoration: none;
+        color:$font-color;
+        font-size: 16px;
+    }
+    a:after {
+        background-color: $font-color; /* Цвет линии при наведении на нее курсора мыши */
+        display: block;
+        content: "";
+        height: 1.5px; /* Высота линии */
+        width: 0%;
+        -webkit-transition: width .3s ease-in-out;
+        -moz--transition: width .3s ease-in-out;
+        transition: width .3s ease-in-out;
+    }
+     a:hover:after,
+     a:focus:after {
+        width: 100%;
+    }
+    &__social{
+        &-number{
+            font-weight: 700;
+            font-size: 28px !important;
+            color: $main-color;
+            line-height: 57%;
+        }
+        &-title{ 
+            margin-top: 0 !important;
+        }
+    }
+}
+
+
+@media(max-width:1200px){
+    .footer{
+        &__logo{
+            h2{
+                font-size: 18px;
+
+            }
+        }
+        &__title{
+            font-size: 14px;
+        }
+        a{
+            font-size: 14px;
+        }
+        p{
+            font-size: 14px;
+        }
+    }
+    a.footer__social-number{
+        font-size: 20px !important;
+    }
+}
+
+@media(max-width:1023px){
+    .footer{
+        &__content{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+        }
+    }
+}
+
+@media(max-width:768px){
+}

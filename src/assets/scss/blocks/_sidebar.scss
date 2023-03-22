@@ -67,6 +67,16 @@
     }
 }
 
+
+@media(max-width:1024px){
+    .sidebar li a{
+        font-size: 14px;
+    }
+    .sidebar h3 a {
+        font-size: 16px;
+    }
+}
+
 @media(max-width:640px){
     .sidebar{
         width: auto;
