@@ -4,45 +4,71 @@
     border-radius: 10px;
     width: 100%;
     padding: 20px;
-    &__title{
-        display: table;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 33px;
-        color: $font-color;
-        padding-bottom: 10px;
-        border-bottom: 3px solid $font-color;//само подчеркивание
+    h2{
+        margin-top: 0;
+        margin-bottom: 20px;
     }
     h3{
         margin: 0;
         padding-bottom: 20px;
         a{
+            display: table;
             font-weight: 500;
             font-size: 18px;
             line-height: 22px;
             color: $font-color;
             text-decoration: none;
-            transition: 1s all;
         }
-        a:hover{
-            text-decoration: underline;
+         a:after {
+            background-color: $font-color; /* Цвет линии при наведении на нее курсора мыши */
+            display: block;
+            content: "";
+            height: 1px; /* Высота линии */
+            width: 0%;
+            -webkit-transition: width .3s ease-in-out;
+            -moz--transition: width .3s ease-in-out;
+            transition: width .3s ease-in-out;
         }
+         a:hover:after,
+         a:focus:after {
+            width: 100%;
+        }
+           
     }
     ul{
         list-style-type: none;
         padding-left: 10px;
+        margin: 0;
     }
     li{
         padding-bottom: 20px;
         a{
+            display: table;
             font-weight: 400;
             font-size: 18px;
             line-height: 22px;
             color: $font-color;
             text-decoration: none;
         }
-        a:hover{
-            text-decoration: underline;
+        a:after {
+            background-color: $font-color; /* Цвет линии при наведении на нее курсора мыши */
+            display: block;
+            content: "";
+            height: 1.5px; /* Высота линии */
+            width: 0%;
+            -webkit-transition: width .3s ease-in-out;
+            -moz--transition: width .3s ease-in-out;
+            transition: width .3s ease-in-out;
         }
+         a:hover:after,
+         a:focus:after {
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width:640px){
+    .sidebar{
+        width: auto;
     }
 }

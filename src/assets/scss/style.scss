@@ -8,6 +8,9 @@
 @import "blocks/buttons";
 @import "blocks/slider";
 @import "blocks/sidebar";
+@import "blocks/benefits";
+@import "blocks/title";
+@import "blocks/sales";
 
 *{
     font-family: 'Montserrat', sans-serif;
@@ -23,7 +26,18 @@
     margin-top: 20px;
     display: grid;
     grid-template-columns: 330px 1fr;
-    column-gap: 15px;
+    column-gap: 60px;
+}
+
+@media (max-width:768px){
+.main-content{
+    grid-template-columns: 1fr 2fr;
+}
+}
+@media (max-width:640px){
+    .main-content{
+        grid-template-columns: 1fr;
+    }
 }
 body{
     background-color: $second-color;

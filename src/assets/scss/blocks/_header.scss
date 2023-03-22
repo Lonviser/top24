@@ -51,3 +51,20 @@
         column-gap:19px;
     }
 }
+
+@media (max-width:640px){
+    .header__call-link{
+        display: none;
+    }
+    .header__heading{
+        font-size: 14px;
+        line-height: 110%;
+        max-width: 120px;
+    }
+    .header__block-call{
+        column-gap:5px;
+    }
+    .button__header{
+        width: 100px !important;
+    }
+}
