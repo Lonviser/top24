@@ -46,3 +46,39 @@
         }
     }
 }
+
+
+
+@media(max-width:768px){
+    .taxi{
+        height: 220px;
+
+    }
+    .taxi__block{
+        padding-top: 22px;
+        padding-left: 23px;
+        padding-right: 23px;
+        padding-bottom: 21px;
+    }
+    .taxi__btn{
+        margin-top: 40px;
+    }
+    .taxi__title{
+        font-size: 20px;
+    }
+    .taxi__info{
+        font-size: 14px;
+
+    }
+    .taxi__btn{
+        width: 140px;
+        height: 45px;
+    }
+}
+
+@media(max-width:320px){
+    .taxi__btn{
+        margin-top: 7px;
+
+    }
+}

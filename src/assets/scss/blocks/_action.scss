@@ -95,12 +95,25 @@
             }
             input{
                 width: 100%;
+                max-width: 100%;
             }
             button{
                 width: 170px;
                 height: 45px;
                 margin: 0 auto;
                 margin-top: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width:576px){
+    .action{
+        &__form{
+            &-inputs{
+                flex-direction: column;
+                gap: 10px;
+    
             }
         }
     }
