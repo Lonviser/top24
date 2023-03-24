@@ -35,3 +35,15 @@ console.log(3)
           },
         },
       });
+
+
+
+      var btn = document.querySelector('.humburger');
+      btn.onclick = function(e) {
+        var element = document.querySelector(".sideber__content");
+        if(element.classList.contains("show-block")) {
+          element.classList.remove("show-block");
+        } else {
+          element.classList.add("show-block");
+        }
+      }

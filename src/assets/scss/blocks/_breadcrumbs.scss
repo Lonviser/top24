@@ -1,0 +1,33 @@
+.breadcrumbs{
+    display: flex;
+    font-size: 14px;
+    line-height: 18px;
+    column-gap: 5px;
+
+    a{
+        display: table;
+        text-decoration: none;
+        color: $main-color;
+    }
+    a:after {
+        background-color: $font-color; /* Цвет линии при наведении на нее курсора мыши */
+        display: block;
+        content: "";
+        height: 1.5px; /* Высота линии */
+        width: 0%;
+        -webkit-transition: width .3s ease-in-out;
+        -moz--transition: width .3s ease-in-out;
+        transition: width .3s ease-in-out;
+    }
+     a:hover:after,
+     a:focus:after {
+        width: 100%;
+    }
+
+}
+
+@media(max-width:640px){
+    .breadcrumbs{
+        margin-top: 20px;
+    }
+}

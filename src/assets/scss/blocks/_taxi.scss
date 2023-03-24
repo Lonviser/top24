@@ -76,9 +76,12 @@
     }
 }
 
-@media(max-width:320px){
+@media(max-width:450px){
     .taxi__btn{
-        margin-top: 7px;
-
+        margin-top: 10px;
+    }
+    .taxi{
+        background: url('/assets/img/taxi-mobile.png') !important;
+        background-repeat:no-repeat !important;    background-size: cover !important;
     }
 }

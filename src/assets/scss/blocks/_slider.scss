@@ -7,7 +7,6 @@
     &__title{
         font-weight: 700;
         font-size: 28px;
-        line-height: 20px;
         color: #FFFFFF;
         margin: 0;
         padding-top: 100px;
@@ -30,6 +29,15 @@
         height: 100%;
         object-fit: cover;
       }
+
+
+      .swiper-button-next:after, .swiper-rtl {
+        content: url(../img/ar-r.svg);
+      }
+      .swiper-button-prev:after{
+        content: url(../img/ar-l.svg);
+
+      }
   }
 
 
@@ -42,5 +50,16 @@
       padding-left: 50px;
     }
     
+    }
+  }
+
+
+  @media(max-width:768px){
+    .swiper-button-next:after, .swiper-rtl {
+      content: url(../img/ar-rm.svg) !important;
+    }
+    .swiper-button-prev:after{
+      content: url(../img/ar-lm.svg) !important;
+
     }
   }

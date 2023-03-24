@@ -1,0 +1,42 @@
+.about{
+    &__blocks{
+        display: flex;
+    }
+    &__block{
+        max-width: 610px;
+        img{
+            width: 400px;
+            height: 308px;
+        }
+    }
+    &__title{
+        margin-top: 19px;
+        margin-bottom: 41px;
+    }
+    h2{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width:1023px){
+    .about{
+        &__blocks{
+            flex-direction: column;
+                }
+    }
+}
+
+@media(max-width:640px){
+    .about{
+        &__block{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

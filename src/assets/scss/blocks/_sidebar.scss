@@ -65,7 +65,22 @@
             width: 100%;
         }
     }
+    .sidebar__title-block {
+        display: flex;
+        justify-content: space-between;
+        img{
+            display: none;
+            width: 25px;
+            height: 20px;
+        }
+    }
+    .show-block{
+        display: block !important;
+        padding-top: 20px;
+    }
 }
+
+//humburger
 
 
 @media(max-width:1024px){
@@ -78,7 +93,20 @@
 }
 
 @media(max-width:640px){
-    .sidebar{
-        width: auto;
+    .sideber__content{
+      display: none;
     }
-}
+    .sidebar{
+        margin-bottom: 40px;
+        h2{
+            margin: 0;
+        }
+    }
+    .sidebar__title-block{
+        align-items: center;
+        img{
+            display: block !important;
+            
+        }
+    }
+  }

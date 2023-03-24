@@ -1,0 +1,31 @@
+.contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        gap: 20px;
+        a{
+            font-weight: 400;
+            font-size: 16px;
+            color: $font-color;
+            text-decoration: none;
+        }
+    }
+    &__details{
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1023px){
+    .contacts{
+        grid-template-columns: 1fr;
+    }
+}
